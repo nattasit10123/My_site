@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-sidebar {width: 120px;background: #222;}
+#main {margin-left: 120px}
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>index</p>
+  </a>
+  <a href="java.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>java</p>
+  </a>
+  <a href="api.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>api</p>
+  </a>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-content w3-padding-64 w3-margin-top" id="main" style="max-width: 1564px;">
+    
+    <h1>The Document Object</h1>
+    <h2>The getElementById() Method</h2>
+    <p id="demo">Hi</p>
+
+    <p id="demo2">Hi</p>
+    <button onclick="myFunction()">Click me</button>
+    
+    <hr>
+    <h2>Calculate number</h2>
+    <input type="numb">
+    <button type="button" onclick="myFunction2">Summit</button>
+    <p id="demo3"></p>
+    
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+  <script>
+    function printAlphabets(){
+        printAlphabets();
+
+        function myFunction() {
+            document.getElementById("demo2").innerHTML = "Hello World";
+          }
+
+          function myFunction2(){
+            let x = document.getElementById("numb").value;
+            let text;
+            if (isNaN(x) || x < 1 || x > 10 ){
+                text = "Input not valid";
+            }else {
+                text = "Input OK";
+            }
+          }
+          document.getElementById("demo3").innerHTML = text;   
+    }
+  </script>
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
